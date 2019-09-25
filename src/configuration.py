@@ -26,7 +26,7 @@ class Configuration(Convertible):
                 self.model_path = os.path.join(self.output_dir, 'model')
                 self.elmo_path = os.path.join(self.data_dir, 'elmo', 'model')
                 self.num_aspects = 20
-                self.visible_gpus = '4,5'  # visible GPUs
+                self.visible_gpus = '0'  # visible GPUs
                 self.num_gpus = len(self.visible_gpus.split(','))
                 os.environ['CUDA_VISIBLE_DEVICES'] = self.visible_gpus
 
